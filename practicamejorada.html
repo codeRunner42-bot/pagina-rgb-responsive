@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aprendiendo Media Query</title>
+
+  <!-- ✅ LINK al CSS personalizado -->
+  <link rel="stylesheet" href="mediaquerymejorado.css" />
+
+  <!-- Iconos FontAwesome -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+</head>
+<body>
+  <header>
+    <h1>Aprendiendo Media Query</h1>
+    <nav>
+      <ul>
+        <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries" target="_blank"><i class="fa-solid fa-book"></i> MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank"><i class="fa-brands fa-w3-css"></i> W3Schools</a></li>
+        <li><a href="https://css-tricks.com/a-complete-guide-to-css-media-queries/" target="_blank"><i class="fa-brands fa-css3-alt"></i> CSS-Tricks</a></li>
+        <li><a href="https://web.dev/learn/css/media-queries" target="_blank"><i class="fa-solid fa-globe"></i> Web.dev (Google)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section class="seccion">
+    <h2>¿Qué son las Media Queries?</h2>
+    <p>
+      Las media queries son una funcionalidad de CSS3 que permite aplicar estilos dependiendo de las características del dispositivo, como el tamaño de la pantalla.
+    </p>
+    <img src="imagenes/Media-Queries (1).jpg" alt="Imagen de código" class="img-responsive" />
+
+    <!-- 🔘 Botón para mostrar/ocultar contenido extra -->
+    <button class="toggle-btn" onclick="toggleInfo()">Mostrar más información</button>
+
+    <div class="extra-info" id="extraInfo">
+      <p>
+        Con las media queries, puedes diseñar interfaces responsive sin depender exclusivamente de frameworks como Bootstrap. Son clave para el diseño moderno.
+      </p>
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+    <p>💻 Página hecha con amor por la programación © 2025</p>
+  </footer>
+  <script>
+  function toggleInfo() {
+    const info = document.getElementById("extraInfo");
+    info.classList.toggle("visible");
+  }
+</script>
+
+</body>
+</html>
